@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Sword_Hit_01.wav-4bf7b3efbd7ad0b0de06803652c19686.sample"
+
+[deps]
+
+source_file="res://Sound/Player/Sword_Attack/Sword_Hit_01.wav"
+dest_files=[ "res://.import/Sword_Hit_01.wav-4bf7b3efbd7ad0b0de06803652c19686.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

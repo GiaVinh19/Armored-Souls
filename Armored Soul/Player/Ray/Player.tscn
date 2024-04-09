@@ -1,0 +1,644 @@
+[gd_scene load_steps=160 format=2]
+
+[ext_resource path="res://Player/Ray/Player.gd" type="Script" id=1]
+[ext_resource path="res://Material/Player/Dash/adventurer-run2-03.png" type="Texture" id=2]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-drop-kick-00.png" type="Texture" id=3]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-drop-kick-01.png" type="Texture" id=4]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack2-02.png" type="Texture" id=5]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack3-rdy-00.png" type="Texture" id=6]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-00.png" type="Texture" id=7]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-01.png" type="Texture" id=8]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-02.png" type="Texture" id=9]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-03.png" type="Texture" id=10]
+[ext_resource path="res://Material/Player/Run/adventurer-run-00.png" type="Texture" id=11]
+[ext_resource path="res://Material/Player/Run/adventurer-run-01.png" type="Texture" id=12]
+[ext_resource path="res://Material/Player/Run/adventurer-run-02.png" type="Texture" id=13]
+[ext_resource path="res://Material/Player/Run/adventurer-run-03.png" type="Texture" id=14]
+[ext_resource path="res://Material/Player/Run/adventurer-run-04.png" type="Texture" id=15]
+[ext_resource path="res://Material/Player/Run/adventurer-run-05.png" type="Texture" id=16]
+[ext_resource path="res://Material/Player/Air_Bow_Attack/adventurer-bow-jump-00.png" type="Texture" id=17]
+[ext_resource path="res://Material/Player/Air_Bow_Attack/adventurer-bow-jump-01.png" type="Texture" id=18]
+[ext_resource path="res://Material/Player/Air_Bow_Attack/adventurer-bow-jump-02.png" type="Texture" id=19]
+[ext_resource path="res://Material/Player/Air_Bow_Attack/adventurer-bow-jump-03.png" type="Texture" id=20]
+[ext_resource path="res://Material/Player/Air_Bow_Attack/adventurer-bow-jump-04.png" type="Texture" id=21]
+[ext_resource path="res://Material/Player/Air_Bow_Attack/adventurer-bow-jump-05.png" type="Texture" id=22]
+[ext_resource path="res://Material/Player/Run/adventurer-run2-00.png" type="Texture" id=23]
+[ext_resource path="res://Material/Player/Run/adventurer-run2-01.png" type="Texture" id=24]
+[ext_resource path="res://Material/Player/Run/adventurer-run2-02.png" type="Texture" id=25]
+[ext_resource path="res://Material/Player/Run/adventurer-run2-03.png" type="Texture" id=26]
+[ext_resource path="res://Material/Player/Run/adventurer-run2-04.png" type="Texture" id=27]
+[ext_resource path="res://Material/Player/Run/adventurer-run2-05.png" type="Texture" id=28]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-fist-00.png" type="Texture" id=29]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-fist-01.png" type="Texture" id=30]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-fist-02.png" type="Texture" id=31]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-fist-03.png" type="Texture" id=32]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack3-00.png" type="Texture" id=33]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack3-01.png" type="Texture" id=34]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack3-02.png" type="Texture" id=35]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack3-03.png" type="Texture" id=36]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack3-04.png" type="Texture" id=37]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack3-05.png" type="Texture" id=38]
+[ext_resource path="res://Material/Player/Knock/adventurer-knock-dwn-00.png" type="Texture" id=39]
+[ext_resource path="res://Material/Player/Knock/adventurer-knock-dwn-01.png" type="Texture" id=40]
+[ext_resource path="res://Material/Player/Knock/adventurer-knock-dwn-02.png" type="Texture" id=41]
+[ext_resource path="res://Material/Player/Knock/adventurer-knock-dwn-03.png" type="Texture" id=42]
+[ext_resource path="res://Material/Player/Knock/adventurer-knock-dwn-04.png" type="Texture" id=43]
+[ext_resource path="res://Material/Player/Knock/adventurer-knock-dwn-05.png" type="Texture" id=44]
+[ext_resource path="res://Material/Player/Knock/adventurer-knock-dwn-06.png" type="Texture" id=45]
+[ext_resource path="res://Material/Player/Knock/adventurer-get-up-00.png" type="Texture" id=46]
+[ext_resource path="res://Material/Player/Knock/adventurer-get-up-01.png" type="Texture" id=47]
+[ext_resource path="res://Material/Player/Knock/adventurer-get-up-02.png" type="Texture" id=48]
+[ext_resource path="res://Material/Player/Knock/adventurer-get-up-03.png" type="Texture" id=49]
+[ext_resource path="res://Material/Player/Knock/adventurer-get-up-04.png" type="Texture" id=50]
+[ext_resource path="res://Material/Player/Knock/adventurer-get-up-05.png" type="Texture" id=51]
+[ext_resource path="res://Material/Player/Knock/adventurer-get-up-06.png" type="Texture" id=52]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-drop-kick-02.png" type="Texture" id=53]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-drop-kick-03.png" type="Texture" id=54]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-00.png" type="Texture" id=55]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-01.png" type="Texture" id=56]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-02.png" type="Texture" id=57]
+[ext_resource path="res://Material/Player/Idle/adventurer-idle-03.png" type="Texture" id=58]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-04.png" type="Texture" id=59]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-05.png" type="Texture" id=60]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-06.png" type="Texture" id=61]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-kick-07.png" type="Texture" id=62]
+[ext_resource path="res://Material/Player/Dead/adventurer-die-00.png" type="Texture" id=63]
+[ext_resource path="res://Material/Player/Dead/adventurer-die-01.png" type="Texture" id=64]
+[ext_resource path="res://Material/Player/Dead/adventurer-die-02.png" type="Texture" id=65]
+[ext_resource path="res://Material/Player/Dead/adventurer-die-03.png" type="Texture" id=66]
+[ext_resource path="res://Material/Player/Dead/adventurer-die-04.png" type="Texture" id=67]
+[ext_resource path="res://Material/Player/Dead/adventurer-die-05.png" type="Texture" id=68]
+[ext_resource path="res://Material/Player/Dead/adventurer-die-06.png" type="Texture" id=69]
+[ext_resource path="res://Material/Player/Jump/adventurer-jump-02.png" type="Texture" id=70]
+[ext_resource path="res://Material/Player/Jump/adventurer-jump-03.png" type="Texture" id=71]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-run-punch-00.png" type="Texture" id=72]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-run-punch-01.png" type="Texture" id=73]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-run-punch-02.png" type="Texture" id=74]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-run-punch-03.png" type="Texture" id=75]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-run-punch-04.png" type="Texture" id=76]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-run-punch-05.png" type="Texture" id=77]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-run-punch-06.png" type="Texture" id=78]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-04.png" type="Texture" id=79]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-05.png" type="Texture" id=80]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-06.png" type="Texture" id=81]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-07.png" type="Texture" id=82]
+[ext_resource path="res://Material/Player/Fall/adventurer-fall-00.png" type="Texture" id=83]
+[ext_resource path="res://Material/Player/Fall/adventurer-fall-01.png" type="Texture" id=84]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack1-03.png" type="Texture" id=85]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack2-00.png" type="Texture" id=86]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack2-01.png" type="Texture" id=87]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack3-loop-00.png" type="Texture" id=88]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack3-loop-01.png" type="Texture" id=89]
+[ext_resource path="res://Material/Player/Jump/adventurer-jump-fist-02.png" type="Texture" id=90]
+[ext_resource path="res://Material/Player/Jump/adventurer-jump-fist-03.png" type="Texture" id=91]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-00.png" type="Texture" id=92]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-01.png" type="Texture" id=93]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-02.png" type="Texture" id=94]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-03.png" type="Texture" id=95]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-00.png" type="Texture" id=96]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-01.png" type="Texture" id=97]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-02.png" type="Texture" id=98]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-03.png" type="Texture" id=99]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack1-00.png" type="Texture" id=100]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack1-01.png" type="Texture" id=101]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack1-02.png" type="Texture" id=102]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-fist-00.png" type="Texture" id=103]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-fist-01.png" type="Texture" id=104]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-fist-02.png" type="Texture" id=105]
+[ext_resource path="res://Material/Player/Air_Jump/adventurer-smrslt-fist-03.png" type="Texture" id=106]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack2-00.png" type="Texture" id=107]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack2-02.png" type="Texture" id=108]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack2-03.png" type="Texture" id=109]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack2-04.png" type="Texture" id=110]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack2-05.png" type="Texture" id=111]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-00.png" type="Texture" id=112]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-01.png" type="Texture" id=113]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-02.png" type="Texture" id=114]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-03.png" type="Texture" id=115]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-04.png" type="Texture" id=116]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-05.png" type="Texture" id=117]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-06.png" type="Texture" id=118]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-07.png" type="Texture" id=119]
+[ext_resource path="res://Material/Player/Bow_Attack/adventurer-bow-08.png" type="Texture" id=120]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-08.png" type="Texture" id=121]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-09.png" type="Texture" id=122]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-10.png" type="Texture" id=123]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-11.png" type="Texture" id=124]
+[ext_resource path="res://Material/Player/Fist_Attack/adventurer-punch-12.png" type="Texture" id=125]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack1-00.png" type="Texture" id=126]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack1-01.png" type="Texture" id=127]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack1-02.png" type="Texture" id=128]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack1-03.png" type="Texture" id=129]
+[ext_resource path="res://Material/Player/Sword_Attack/adventurer-attack1-04.png" type="Texture" id=130]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack-3-end-00.png" type="Texture" id=131]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack-3-end-01.png" type="Texture" id=132]
+[ext_resource path="res://Material/Player/Air_Sword_Attack/adventurer-air-attack-3-end-02.png" type="Texture" id=133]
+[ext_resource path="res://HUD/UI.tscn" type="PackedScene" id=134]
+[ext_resource path="res://Sound/Player/Fist_Attack/Fist_01.wav" type="AudioStream" id=135]
+[ext_resource path="res://Sound/Player/Fist_Attack/Fist_02.wav" type="AudioStream" id=136]
+[ext_resource path="res://Sound/Player/Fist_Attack/Fist_Hit_01.wav" type="AudioStream" id=137]
+[ext_resource path="res://Sound/Player/Fist_Attack/Fist_Hit_02.wav" type="AudioStream" id=138]
+[ext_resource path="res://Sound/Player/Kick_Attack/Kick_01.wav" type="AudioStream" id=139]
+[ext_resource path="res://Sound/Player/Kick_Attack/Kick_02.wav" type="AudioStream" id=140]
+[ext_resource path="res://Sound/Player/Sword_Attack/Sword_01.wav" type="AudioStream" id=141]
+[ext_resource path="res://Sound/Player/Sword_Attack/Sword_02.wav" type="AudioStream" id=142]
+[ext_resource path="res://Sound/Player/Sword_Attack/Sword_03.wav" type="AudioStream" id=143]
+[ext_resource path="res://Sound/Player/Sword_Attack/Sword_Hit_01.wav" type="AudioStream" id=144]
+[ext_resource path="res://Sound/Player/Sword_Attack/Sword_Hit_02.wav" type="AudioStream" id=145]
+[ext_resource path="res://Sound/Player/Sword_Attack/Sword_Hit_03.wav" type="AudioStream" id=146]
+[ext_resource path="res://Sound/Player/Dash/Dash_01.wav" type="AudioStream" id=147]
+[ext_resource path="res://Sound/Player/Bow_Attack/Bow_Pull.wav" type="AudioStream" id=148]
+[ext_resource path="res://Sound/Player/Bow_Attack/Bow_Release.wav" type="AudioStream" id=149]
+[ext_resource path="res://Sound/Effect/Ignite/Ignite.wav" type="AudioStream" id=150]
+[ext_resource path="res://Sound/Effect/Ignite/Ignite_Hit_01.wav" type="AudioStream" id=151]
+[ext_resource path="res://Sound/Effect/Ignite/Ignite_Hit_02.wav" type="AudioStream" id=152]
+[ext_resource path="res://Sound/Effect/Ignite/Ignite_Loop.wav" type="AudioStream" id=153]
+[ext_resource path="res://Sound/Effect/Ignite/Fissure.wav" type="AudioStream" id=154]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 22 ) ],
+"loop": false,
+"name": "Air_Bow_Attack",
+"speed": 9.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ) ],
+"loop": true,
+"name": "Air_Jump_Fist",
+"speed": 11.0
+}, {
+"frames": [ ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ) ],
+"loop": true,
+"name": "Air_Jump_Sword",
+"speed": 11.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 53 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "Air_Kick_Attack",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 85 ) ],
+"loop": false,
+"name": "Air_Sword_Attack_01",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "Air_Sword_Attack_02",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 120 ) ],
+"loop": false,
+"name": "Bow_Attack",
+"speed": 9.0
+}, {
+"frames": [ ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ) ],
+"loop": false,
+"name": "Charge_Fist_Attack",
+"speed": 11.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "Dash",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), null, ExtResource( 68 ), null, ExtResource( 69 ), null ],
+"loop": false,
+"name": "Dead",
+"speed": 7.0
+}, {
+"frames": [ ExtResource( 83 ), ExtResource( 84 ) ],
+"loop": true,
+"name": "Fall",
+"speed": 9.0
+}, {
+"frames": [ ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ) ],
+"loop": false,
+"name": "Fist_Attack_01",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ) ],
+"loop": false,
+"name": "Fist_Attack_02",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ) ],
+"loop": false,
+"name": "Fist_Attack_03",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "Idle_Fist",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "Idle_Sword",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 90 ), ExtResource( 91 ) ],
+"loop": true,
+"name": "Jump_Fist",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 70 ), ExtResource( 71 ) ],
+"loop": false,
+"name": "Jump_Sword",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "Kick_Attack_01",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ) ],
+"loop": false,
+"name": "Kick_Attack_02",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "Kick_Fall",
+"speed": 4.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "Kick_Falling",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ) ],
+"loop": false,
+"name": "Knock",
+"speed": 9.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ) ],
+"loop": true,
+"name": "Run_Fist",
+"speed": 11.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "Run_Sword",
+"speed": 11.0
+}, {
+"frames": [ ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ) ],
+"loop": false,
+"name": "Sword_Attack_01",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ) ],
+"loop": false,
+"name": "Sword_Attack_02",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ) ],
+"loop": false,
+"name": "Sword_Attack_03",
+"speed": 25.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "Sword_Fall",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 133 ) ],
+"loop": false,
+"name": "Sword_Fall_Finish",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 88 ), ExtResource( 89 ) ],
+"loop": true,
+"name": "Sword_Falling",
+"speed": 15.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 7.0
+height = 15.75
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 10.235
+
+[sub_resource type="CircleShape2D" id=4]
+
+[sub_resource type="CircleShape2D" id=5]
+
+[node name="Player" type="KinematicBody2D"]
+scale = Vector2( 3, 3 )
+z_index = 1
+collision_mask = 14
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+z_index = 1
+frames = SubResource( 1 )
+animation = "Sword_Fall_Finish"
+offset = Vector2( 0, -2.5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 0.25 )
+shape = SubResource( 2 )
+
+[node name="Arrow_Spawn" type="Position2D" parent="."]
+position = Vector2( 16, 0 )
+
+[node name="Timer_Node" type="Node" parent="."]
+
+[node name="Melee_Timer" type="Timer" parent="Timer_Node"]
+wait_time = 0.5
+one_shot = true
+
+[node name="Dash_Delay" type="Timer" parent="Timer_Node"]
+wait_time = 0.25
+one_shot = true
+
+[node name="Dash_Cooldown" type="Timer" parent="Timer_Node"]
+wait_time = 1.25
+one_shot = true
+
+[node name="After_Image_Timer" type="Timer" parent="Timer_Node"]
+wait_time = 0.06
+autostart = true
+
+[node name="Dead_Timer" type="Timer" parent="Timer_Node"]
+wait_time = 3.0
+one_shot = true
+
+[node name="Bow_Cooldown" type="Timer" parent="Timer_Node"]
+wait_time = 0.5
+one_shot = true
+
+[node name="Air_Coolddown" type="Timer" parent="Timer_Node"]
+wait_time = 0.5
+one_shot = true
+
+[node name="Ignite_Cooldown" type="Timer" parent="Timer_Node"]
+wait_time = 20.0
+one_shot = true
+
+[node name="Combo_Delay" type="Timer" parent="Timer_Node"]
+wait_time = 0.25
+one_shot = true
+
+[node name="Melee" type="Node2D" parent="."]
+
+[node name="Sword_Normal" type="Area2D" parent="Melee"]
+visible = false
+scale = Vector2( 3, 3 )
+collision_layer = 8
+collision_mask = 2
+
+[node name="Sword_Collision_01" type="CollisionShape2D" parent="Melee/Sword_Normal"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 2.25, 0 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 1
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Sword_Collision_02" type="CollisionShape2D" parent="Melee/Sword_Normal"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 2.75, -1.75 )
+scale = Vector2( 0.525, 0.525 )
+z_index = 1
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Air_Sword_Collision_01" type="CollisionShape2D" parent="Melee/Sword_Normal"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 0.5, -2.25 )
+rotation = 0.218166
+scale = Vector2( 0.75, 0.35 )
+z_index = 1
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Sword_Finish" type="Area2D" parent="Melee"]
+visible = false
+scale = Vector2( 3, 3 )
+collision_layer = 8
+collision_mask = 2
+
+[node name="Sword_Collision_03" type="CollisionShape2D" parent="Melee/Sword_Finish"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 0.5, 1.75 )
+rotation = 3.05433
+scale = Vector2( 0.775, 0.275 )
+z_index = 1
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Air_Sword_Collision_02" type="CollisionShape2D" parent="Melee/Sword_Finish"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 2.5, -0.5 )
+rotation = 2.61799
+scale = Vector2( 0.575, 0.5 )
+z_index = 1
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Sword_Fall" type="Area2D" parent="Melee"]
+visible = false
+position = Vector2( 0, -7.33333 )
+
+[node name="Sword_Fall_Collision" type="CollisionPolygon2D" parent="Melee/Sword_Fall"]
+build_mode = 1
+polygon = PoolVector2Array( -3.33333, 24, 13.3333, 24, 13.3333, -12.6667, -10, -12.6667 )
+disabled = true
+
+[node name="Fist_Normal" type="Area2D" parent="Melee"]
+visible = false
+scale = Vector2( 3, 3 )
+collision_layer = 8
+collision_mask = 2
+
+[node name="Fist_Collision_01" type="CollisionShape2D" parent="Melee/Fist_Normal"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 1.5, 0.65 )
+scale = Vector2( 0.5, 0.25 )
+z_index = 1
+shape = SubResource( 4 )
+disabled = true
+
+[node name="Fist_Collision_02" type="CollisionShape2D" parent="Melee/Fist_Normal"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 0.8, -0.25 )
+scale = Vector2( 0.6, 0.25 )
+z_index = 1
+shape = SubResource( 3 )
+disabled = true
+
+[node name="Kick_Normal" type="Area2D" parent="Melee"]
+visible = false
+scale = Vector2( 3, 3 )
+collision_layer = 8
+collision_mask = 2
+
+[node name="Kick_Collision_01" type="CollisionShape2D" parent="Melee/Kick_Normal"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 3, 1.25 )
+rotation = 2.35619
+scale = Vector2( 0.5, 0.25 )
+z_index = 1
+shape = SubResource( 5 )
+disabled = true
+
+[node name="Kick_Collision_02" type="CollisionShape2D" parent="Melee/Kick_Normal"]
+modulate = Color( 0, 1, 0, 1 )
+position = Vector2( 2, 2 )
+rotation = 2.79253
+scale = Vector2( 0.5, 0.25 )
+z_index = 1
+shape = SubResource( 5 )
+disabled = true
+
+[node name="Kick_Fall" type="Area2D" parent="Melee"]
+visible = false
+
+[node name="Kick_Fall_Collision" type="CollisionPolygon2D" parent="Melee/Kick_Fall"]
+build_mode = 1
+polygon = PoolVector2Array( 0, 16.6667, 6.66667, 16.6667, 16.6667, 16.6667, 13.3333, 6.66667, 6.66667, -6.66667, -10, 6.66667, -6.66667, 13.3333 )
+disabled = true
+
+[node name="UI" type="CanvasLayer" parent="."]
+scale = Vector2( 1.5, 1.5 )
+transform = Transform2D( 1.5, 0, 0, 1.5, 0, 0 )
+
+[node name="Stats bar" parent="UI" instance=ExtResource( 134 )]
+
+[node name="Sound" type="Node2D" parent="."]
+
+[node name="Fist_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 135 )
+pitch_scale = 2.0
+
+[node name="Fist_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 136 )
+pitch_scale = 2.0
+
+[node name="Fist_Hit_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 137 )
+pitch_scale = 1.15
+
+[node name="Fist_Hit_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 138 )
+pitch_scale = 1.15
+
+[node name="Kick_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 135 )
+volume_db = -10.0
+pitch_scale = 1.15
+
+[node name="Kick_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 136 )
+volume_db = -10.0
+pitch_scale = 1.15
+
+[node name="Kick_Hit_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 139 )
+pitch_scale = 1.2
+
+[node name="Kick_Hit_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 140 )
+pitch_scale = 1.2
+
+[node name="Sword_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 141 )
+volume_db = -10.0
+
+[node name="Sword_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 142 )
+volume_db = -10.0
+
+[node name="Sword_03" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 143 )
+volume_db = -10.0
+
+[node name="Sword_Hit_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 144 )
+pitch_scale = 0.75
+
+[node name="Sword_Hit_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 145 )
+pitch_scale = 0.75
+
+[node name="Sword_Hit_03" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 146 )
+pitch_scale = 0.75
+
+[node name="Dash" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 147 )
+pitch_scale = 1.25
+
+[node name="Bow_Pull" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 148 )
+pitch_scale = 1.25
+
+[node name="Bow_Release" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 149 )
+pitch_scale = 1.25
+
+[node name="Ignite" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 150 )
+pitch_scale = 1.25
+
+[node name="Ignite_Hit_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 151 )
+pitch_scale = 1.5
+
+[node name="Ignite_Hit_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 152 )
+pitch_scale = 1.5
+
+[node name="Ignite_Loop" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 153 )
+volume_db = -5.0
+pitch_scale = 0.85
+
+[node name="Fissure" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 154 )
+volume_db = -5.0
+pitch_scale = 1.25
+
+[node name="Jump_01" type="AudioStreamPlayer2D" parent="Sound"]
+
+[node name="Jump_02" type="AudioStreamPlayer2D" parent="Sound"]
+
+[node name="Jump_03" type="AudioStreamPlayer2D" parent="Sound"]
+
+[node name="Counter" type="RichTextLabel" parent="."]
+modulate = Color( 1, 0.937255, 0, 1 )
+margin_left = -2.0
+margin_top = -25.0
+margin_right = 38.0
+margin_bottom = 15.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="Ignite" type="RichTextLabel" parent="."]
+modulate = Color( 1, 0.937255, 0, 1 )
+margin_left = -12.5
+margin_top = -25.0
+margin_right = 42.5
+margin_bottom = 15.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="timeout" from="Timer_Node/Melee_Timer" to="." method="_on_Melee_Timer_timeout"]
+[connection signal="timeout" from="Timer_Node/Dash_Delay" to="." method="_on_Dash_Delay_timeout"]
+[connection signal="timeout" from="Timer_Node/Dash_Cooldown" to="." method="_on_Dash_Cooldown_timeout"]
+[connection signal="timeout" from="Timer_Node/After_Image_Timer" to="." method="_on_After_Image_Timer_timeout"]
+[connection signal="timeout" from="Timer_Node/Dead_Timer" to="." method="_on_Dead_Timer_timeout"]
+[connection signal="timeout" from="Timer_Node/Bow_Cooldown" to="." method="_on_Bow_Cooldown_timeout"]
+[connection signal="timeout" from="Timer_Node/Air_Coolddown" to="." method="_on_Air_Coolddown_timeout"]
+[connection signal="timeout" from="Timer_Node/Ignite_Cooldown" to="." method="_on_Ignite_Cooldown_timeout"]
+[connection signal="timeout" from="Timer_Node/Combo_Delay" to="." method="_on_Combo_Delay_timeout"]
+[connection signal="body_entered" from="Melee/Sword_Normal" to="." method="_on_Sword_Normal_body_entered"]
+[connection signal="body_entered" from="Melee/Sword_Finish" to="." method="_on_Sword_Finish_body_entered"]
+[connection signal="body_entered" from="Melee/Sword_Fall" to="." method="_on_Sword_Fall_body_entered"]
+[connection signal="body_entered" from="Melee/Fist_Normal" to="." method="_on_Fist_Normal_body_entered"]
+[connection signal="body_entered" from="Melee/Kick_Normal" to="." method="_on_Kick_Normal_body_entered"]
+[connection signal="body_entered" from="Melee/Kick_Fall" to="." method="_on_Kick_Fall_body_entered"]

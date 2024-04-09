@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Ignite_Hit_01.wav-0b81654263f1078a2cc75c741c8280ef.sample"
+
+[deps]
+
+source_file="res://Sound/Effect/Ignite/Ignite_Hit_01.wav"
+dest_files=[ "res://.import/Ignite_Hit_01.wav-0b81654263f1078a2cc75c741c8280ef.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

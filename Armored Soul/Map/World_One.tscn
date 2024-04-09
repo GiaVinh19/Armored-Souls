@@ -1,0 +1,134 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Tiles/Jungle_Dirt_Tile_Set.tres" type="TileSet" id=1]
+[ext_resource path="res://Player/Ray/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Enemy/Skeleton/Skeleton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Prop/Door/Door.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Material/Background/Sunnyland_Forest/middleground_01.png" type="Texture" id=5]
+[ext_resource path="res://Material/Background/Sunnyland_Forest/background.png" type="Texture" id=6]
+[ext_resource path="res://Enemy/Wizard/Wizard.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sound/Music/Remember - GBA arrange ver..wav" type="AudioStream" id=8]
+
+[node name="World_One" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 32 )
+collision_layer = 4
+collision_mask = 11
+format = 1
+tile_data = PoolIntArray( 65535, 9, 0, 0, 11, 0, 95, 9, 0, 96, 11, 0, 131071, 3, 0, 65536, 5, 0, 65631, 3, 0, 65632, 5, 0, 196607, 3, 0, 131072, 5, 0, 131167, 3, 0, 131168, 5, 0, 262143, 3, 0, 196608, 5, 0, 196703, 3, 0, 196704, 5, 0, 327679, 3, 0, 262144, 5, 0, 262239, 3, 0, 262240, 5, 0, 393215, 3, 0, 327680, 5, 0, 327775, 3, 0, 327776, 5, 0, 458751, 3, 0, 393216, 5, 0, 393311, 3, 0, 393312, 5, 0, 524287, 3, 0, 458752, 5, 0, 458786, 9, 0, 458787, 10, 0, 458788, 10, 0, 458789, 10, 0, 458790, 10, 0, 458791, 10, 0, 458792, 10, 0, 458793, 10, 0, 458794, 10, 0, 458795, 10, 0, 458796, 10, 0, 458797, 10, 0, 458798, 10, 0, 458799, 11, 0, 458804, 9, 0, 458805, 11, 0, 458810, 9, 0, 458811, 10, 0, 458812, 10, 0, 458813, 10, 0, 458814, 10, 0, 458815, 10, 0, 458816, 10, 0, 458817, 10, 0, 458818, 10, 0, 458819, 10, 0, 458820, 10, 0, 458821, 10, 0, 458822, 10, 0, 458823, 10, 0, 458824, 10, 0, 458825, 10, 0, 458826, 10, 0, 458827, 10, 0, 458828, 10, 0, 458829, 10, 0, 458830, 11, 0, 458847, 3, 0, 458848, 5, 0, 589823, 3, 0, 524288, 5, 0, 524322, 6, 0, 524323, 7, 0, 524324, 7, 0, 524325, 7, 0, 524326, 7, 0, 524327, 7, 0, 524328, 7, 0, 524329, 7, 0, 524330, 7, 0, 524331, 7, 0, 524332, 7, 0, 524333, 7, 0, 524334, 7, 0, 524335, 8, 0, 524340, 3, 0, 524341, 5, 0, 524346, 6, 0, 524347, 7, 0, 524348, 7, 0, 524349, 7, 0, 524350, 7, 0, 524351, 7, 0, 524352, 7, 0, 524353, 7, 0, 524354, 7, 0, 524355, 7, 0, 524356, 7, 0, 524357, 7, 0, 524358, 7, 0, 524359, 7, 0, 524360, 7, 0, 524361, 7, 0, 524362, 7, 0, 524363, 7, 0, 524364, 7, 0, 524365, 7, 0, 524366, 8, 0, 524383, 3, 0, 524384, 5, 0, 655359, 3, 0, 589824, 5, 0, 589876, 3, 0, 589877, 5, 0, 589919, 3, 0, 589920, 5, 0, 720895, 3, 0, 655360, 5, 0, 655412, 3, 0, 655413, 5, 0, 655455, 3, 0, 655456, 5, 0, 786431, 3, 0, 720896, 5, 0, 720948, 3, 0, 720949, 5, 0, 720991, 3, 0, 720992, 5, 0, 851967, 3, 0, 786432, 5, 0, 786484, 3, 0, 786485, 5, 0, 786516, 9, 0, 786517, 10, 0, 786518, 10, 0, 786519, 10, 0, 786520, 10, 0, 786521, 10, 0, 786522, 10, 0, 786523, 10, 0, 786524, 11, 0, 786527, 3, 0, 786528, 5, 0, 917503, 3, 0, 851968, 5, 0, 851995, 9, 0, 851996, 11, 0, 852020, 3, 0, 852021, 5, 0, 852052, 6, 0, 852053, 7, 0, 852054, 7, 0, 852055, 7, 0, 852056, 7, 0, 852057, 7, 0, 852058, 7, 0, 852059, 7, 0, 852060, 8, 0, 852063, 3, 0, 852064, 5, 0, 983039, 3, 0, 917504, 5, 0, 917531, 3, 0, 917532, 5, 0, 917556, 3, 0, 917557, 5, 0, 917599, 3, 0, 917600, 5, 0, 1048575, 3, 0, 983040, 5, 0, 983067, 3, 0, 983068, 5, 0, 983092, 3, 0, 983093, 5, 0, 983135, 3, 0, 983136, 5, 0, 1114111, 3, 0, 1048576, 5, 0, 1048603, 3, 0, 1048604, 5, 0, 1048628, 6, 0, 1048629, 8, 0, 1048671, 3, 0, 1048672, 5, 0, 1179647, 3, 0, 1114112, 5, 0, 1114139, 3, 0, 1114140, 5, 0, 1114207, 3, 0, 1114208, 5, 0, 1245183, 3, 0, 1179648, 5, 0, 1179675, 3, 0, 1179676, 5, 0, 1179743, 3, 0, 1179744, 5, 0, 1310719, 3, 0, 1245184, 5, 0, 1245201, 9, 0, 1245202, 11, 0, 1245211, 3, 0, 1245212, 5, 0, 1245279, 3, 0, 1245280, 5, 0, 1376255, 3, 0, 1310720, 5, 0, 1310737, 3, 0, 1310738, 5, 0, 1310747, 3, 0, 1310748, 5, 0, 1310798, 9, 0, 1310799, 11, 0, 1310815, 3, 0, 1310816, 5, 0, 1441791, 3, 0, 1376256, 5, 0, 1376273, 3, 0, 1376274, 5, 0, 1376283, 3, 0, 1376284, 5, 0, 1376334, 3, 0, 1376335, 5, 0, 1376351, 3, 0, 1376352, 5, 0, 1507327, 3, 0, 1441792, 13, 0, 1441793, 10, 0, 1441794, 10, 0, 1441795, 10, 0, 1441796, 10, 0, 1441797, 10, 0, 1441798, 10, 0, 1441799, 10, 0, 1441800, 10, 0, 1441801, 10, 0, 1441802, 10, 0, 1441803, 10, 0, 1441804, 10, 0, 1441805, 10, 0, 1441806, 10, 0, 1441807, 10, 0, 1441808, 10, 0, 1441809, 12, 0, 1441810, 13, 0, 1441811, 10, 0, 1441812, 10, 0, 1441813, 10, 0, 1441814, 10, 0, 1441815, 10, 0, 1441816, 10, 0, 1441817, 10, 0, 1441818, 10, 0, 1441819, 12, 0, 1441820, 13, 0, 1441821, 10, 0, 1441822, 10, 0, 1441823, 10, 0, 1441824, 10, 0, 1441825, 10, 0, 1441826, 10, 0, 1441827, 10, 0, 1441828, 10, 0, 1441829, 10, 0, 1441830, 10, 0, 1441831, 10, 0, 1441832, 10, 0, 1441833, 10, 0, 1441834, 10, 0, 1441835, 10, 0, 1441836, 10, 0, 1441837, 10, 0, 1441838, 10, 0, 1441839, 10, 0, 1441840, 10, 0, 1441841, 10, 0, 1441842, 10, 0, 1441843, 10, 0, 1441844, 10, 0, 1441845, 10, 0, 1441846, 10, 0, 1441847, 10, 0, 1441848, 10, 0, 1441849, 10, 0, 1441850, 10, 0, 1441851, 10, 0, 1441852, 10, 0, 1441853, 10, 0, 1441854, 10, 0, 1441855, 10, 0, 1441856, 10, 0, 1441857, 10, 0, 1441858, 10, 0, 1441859, 10, 0, 1441860, 10, 0, 1441861, 10, 0, 1441862, 10, 0, 1441863, 10, 0, 1441864, 10, 0, 1441865, 10, 0, 1441866, 10, 0, 1441867, 10, 0, 1441868, 10, 0, 1441869, 10, 0, 1441870, 12, 0, 1441871, 13, 0, 1441872, 10, 0, 1441873, 10, 0, 1441874, 10, 0, 1441875, 10, 0, 1441876, 10, 0, 1441877, 10, 0, 1441878, 10, 0, 1441879, 10, 0, 1441880, 10, 0, 1441881, 10, 0, 1441882, 10, 0, 1441883, 10, 0, 1441884, 10, 0, 1441885, 10, 0, 1441886, 10, 0, 1441887, 12, 0, 1441888, 5, 0, 1572863, 6, 0, 1507328, 7, 0, 1507329, 7, 0, 1507330, 7, 0, 1507331, 7, 0, 1507332, 7, 0, 1507333, 7, 0, 1507334, 7, 0, 1507335, 7, 0, 1507336, 7, 0, 1507337, 7, 0, 1507338, 7, 0, 1507339, 7, 0, 1507340, 7, 0, 1507341, 7, 0, 1507342, 7, 0, 1507343, 7, 0, 1507344, 7, 0, 1507345, 7, 0, 1507346, 7, 0, 1507347, 7, 0, 1507348, 7, 0, 1507349, 7, 0, 1507350, 7, 0, 1507351, 7, 0, 1507352, 7, 0, 1507353, 7, 0, 1507354, 7, 0, 1507355, 7, 0, 1507356, 7, 0, 1507357, 7, 0, 1507358, 7, 0, 1507359, 7, 0, 1507360, 7, 0, 1507361, 7, 0, 1507362, 7, 0, 1507363, 7, 0, 1507364, 7, 0, 1507365, 7, 0, 1507366, 7, 0, 1507367, 7, 0, 1507368, 7, 0, 1507369, 7, 0, 1507370, 7, 0, 1507371, 7, 0, 1507372, 7, 0, 1507373, 7, 0, 1507374, 7, 0, 1507375, 7, 0, 1507376, 7, 0, 1507377, 7, 0, 1507378, 7, 0, 1507379, 7, 0, 1507380, 7, 0, 1507381, 7, 0, 1507382, 7, 0, 1507383, 7, 0, 1507384, 7, 0, 1507385, 7, 0, 1507386, 7, 0, 1507387, 7, 0, 1507388, 7, 0, 1507389, 7, 0, 1507390, 7, 0, 1507391, 7, 0, 1507392, 7, 0, 1507393, 7, 0, 1507394, 7, 0, 1507395, 7, 0, 1507396, 7, 0, 1507397, 7, 0, 1507398, 7, 0, 1507399, 7, 0, 1507400, 7, 0, 1507401, 7, 0, 1507402, 7, 0, 1507403, 7, 0, 1507404, 7, 0, 1507405, 7, 0, 1507406, 7, 0, 1507407, 7, 0, 1507408, 7, 0, 1507409, 7, 0, 1507410, 7, 0, 1507411, 7, 0, 1507412, 7, 0, 1507413, 7, 0, 1507414, 7, 0, 1507415, 7, 0, 1507416, 7, 0, 1507417, 7, 0, 1507418, 7, 0, 1507419, 7, 0, 1507420, 7, 0, 1507421, 7, 0, 1507422, 7, 0, 1507423, 7, 0, 1507424, 8, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 281, 624 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 0.85, 0.85 )
+limit_left = 0
+limit_top = 0
+limit_right = 3072
+limit_bottom = 768
+limit_smoothed = true
+smoothing_enabled = true
+smoothing_speed = 15.0
+offset_v = -1.0
+drag_margin_left = 0.1
+drag_margin_top = 0.1
+drag_margin_right = 0.1
+drag_margin_bottom = 0.1
+
+[node name="Enemy_Position" type="Node" parent="."]
+
+[node name="Skeleton" parent="Enemy_Position" instance=ExtResource( 3 )]
+position = Vector2( 1490, 640 )
+
+[node name="Skeleton2" parent="Enemy_Position" instance=ExtResource( 3 )]
+position = Vector2( 1700, 640 )
+
+[node name="Skeleton3" parent="Enemy_Position" instance=ExtResource( 3 )]
+position = Vector2( 1216, 160 )
+
+[node name="Skeleton4" parent="Enemy_Position" instance=ExtResource( 3 )]
+position = Vector2( 2060, 160 )
+
+[node name="Skeleton5" parent="Enemy_Position" instance=ExtResource( 3 )]
+position = Vector2( 2218, 160 )
+
+[node name="Skeleton6" parent="Enemy_Position" instance=ExtResource( 3 )]
+position = Vector2( 2847, 300 )
+
+[node name="Skeleton7" parent="Enemy_Position" instance=ExtResource( 3 )]
+position = Vector2( 740, 640 )
+
+[node name="Wizard" parent="Enemy_Position" instance=ExtResource( 7 )]
+position = Vector2( 1820, 640 )
+
+[node name="Wizard3" parent="Enemy_Position" instance=ExtResource( 7 )]
+position = Vector2( 1692, 160 )
+
+[node name="Wizard2" parent="Enemy_Position" instance=ExtResource( 7 )]
+position = Vector2( 2832, 635 )
+
+[node name="Objects" type="Node" parent="."]
+
+[node name="Door" parent="Objects" instance=ExtResource( 4 )]
+position = Vector2( 3070, -30 )
+z_index = -1
+collision_layer = 4
+world = "res://Map/World_Two.tscn"
+
+[node name="Background" type="Node" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="Background"]
+layer = -1
+scroll_base_offset = Vector2( 0, -112 )
+scroll_base_scale = Vector2( 0.5, 0.5 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background/ParallaxBackground"]
+motion_mirroring = Vector2( 1536, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Midground" type="Sprite" parent="Background/ParallaxBackground/ParallaxLayer"]
+modulate = Color( 0.196078, 1, 1, 1 )
+position = Vector2( 0, 3.8147e-06 )
+scale = Vector2( 4, 4 )
+texture = ExtResource( 5 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="ParallaxBackground2" type="ParallaxBackground" parent="Background"]
+layer = -2
+scroll_base_offset = Vector2( 0, -160 )
+scroll_base_scale = Vector2( 0.25, 0.25 )
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Background/ParallaxBackground2"]
+motion_mirroring = Vector2( 864, 0 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Background" type="Sprite" parent="Background/ParallaxBackground2/ParallaxLayer"]
+modulate = Color( 0.196078, 0.784314, 1, 1 )
+scale = Vector2( 4.5, 3 )
+texture = ExtResource( 6 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -8.0
+autoplay = true

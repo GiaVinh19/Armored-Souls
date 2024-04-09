@@ -1,0 +1,345 @@
+[gd_scene load_steps=54 format=2]
+
+[ext_resource path="res://Material/Enemy/Wizard/Hit.png" type="Texture" id=1]
+[ext_resource path="res://Material/Enemy/Wizard/Idle.png" type="Texture" id=2]
+[ext_resource path="res://Enemy/Wizard/Wizard.gd" type="Script" id=3]
+[ext_resource path="res://Material/Enemy/Wizard/Death.png" type="Texture" id=4]
+[ext_resource path="res://Material/HUD/Stats/Health Bar/health_bar.png" type="Texture" id=5]
+[ext_resource path="res://Sound/Effect/Bolt/Weapons_hero_void_spirit_attack_layer03.mp3.wav" type="AudioStream" id=6]
+[ext_resource path="res://Material/HUD/Stats/Health Bar/health_bar_decoration-1.png" type="Texture" id=7]
+[ext_resource path="res://Sound/Effect/Bolt/Weapons_hero_void_spirit_attack_layer02.mp3.wav" type="AudioStream" id=8]
+[ext_resource path="res://Sound/Effect/Bolt/Weapons_hero_void_spirit_attack_layer01.mp3.wav" type="AudioStream" id=9]
+[ext_resource path="res://Sound/Effect/Bolt/Lina_Dragon_Slave_1.mp3.wav" type="AudioStream" id=10]
+[ext_resource path="res://Sound/Effect/Freeze/Freeze.wav" type="AudioStream" id=11]
+[ext_resource path="res://Material/Enemy/Wizard/Attack2.png" type="Texture" id=12]
+[ext_resource path="res://Material/Enemy/Wizard/Freeze.png" type="Texture" id=13]
+[ext_resource path="res://Material/Enemy/Wizard/Run.png" type="Texture" id=14]
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 231, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 462, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 693, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 924, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 1155, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 1386, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 1617, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 231, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 462, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 693, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 924, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1155, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 1386, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 0, 0, 231, 191 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 231, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 462, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 693, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 924, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 2 )
+region = Rect2( 1155, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 231, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 462, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 693, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 0, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 231, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 462, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=35]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 693, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=36]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 924, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=37]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 1155, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=38]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 1386, 0, 231, 190 )
+
+[sub_resource type="AtlasTexture" id=39]
+flags = 4
+atlas = ExtResource( 14 )
+region = Rect2( 1617, 0, 231, 190 )
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 9.0
+}, {
+"frames": [ SubResource( 31 ), SubResource( 31 ), SubResource( 31 ), SubResource( 31 ), SubResource( 31 ) ],
+"loop": false,
+"name": "Freeze",
+"speed": 1.0
+}, {
+"frames": [ SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
+"loop": true,
+"name": "Idle",
+"speed": 6.0
+}, {
+"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ) ],
+"loop": false,
+"name": "Mini_Stun",
+"speed": 6.0
+}, {
+"frames": [ SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ), SubResource( 38 ), SubResource( 39 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 7.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 4.5
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 8.80435, 9.65909 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 6.75, 8 )
+
+[sub_resource type="CapsuleShape2D" id=5]
+
+[node name="Wizard" type="KinematicBody2D"]
+scale = Vector2( 5, 5 )
+collision_layer = 2
+collision_mask = 13
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.25, 0.25 )
+frames = SubResource( 1 )
+animation = "Attack"
+frame = 5
+
+[node name="CollisionShape2D_Head" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, -5 )
+scale = Vector2( 0.8, 0.8 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D_Freeze" type="CollisionShape2D" parent="."]
+visible = false
+modulate = Color( 0.40625, 1, 0, 1 )
+position = Vector2( -0.125, 1.875 )
+scale = Vector2( 1.15, 1.1 )
+shape = SubResource( 3 )
+disabled = true
+
+[node name="CollisionShape2D_Body" type="CollisionShape2D" parent="."]
+visible = false
+modulate = Color( 0.266667, 1, 0, 1 )
+position = Vector2( 0, 3.5 )
+shape = SubResource( 4 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 2, 0 )
+enabled = true
+cast_to = Vector2( 0, 17.5 )
+collision_mask = 4
+
+[node name="Hitscan" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 0
+
+[node name="Hitscan_Collision" type="CollisionPolygon2D" parent="Hitscan"]
+polygon = PoolVector2Array( 13.8, 0.4, 20.4, 1.4, 24.4, -4.8, 21.6, -9.8, 16.4, -11, 10.4, -3.8 )
+disabled = true
+
+[node name="Detect_Player" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detect_Player"]
+position = Vector2( 50, 0 )
+scale = Vector2( 5, 1 )
+shape = SubResource( 5 )
+
+[node name="Detect_Player2" type="Area2D" parent="."]
+visible = false
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detect_Player2"]
+position = Vector2( 50, 0 )
+scale = Vector2( 5, 1 )
+shape = SubResource( 5 )
+
+[node name="Sound" type="Node2D" parent="."]
+
+[node name="Swing" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 10 )
+volume_db = -5.0
+pitch_scale = 1.5
+
+[node name="Hit_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 9 )
+
+[node name="Hit_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 8 )
+
+[node name="Hit_03" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 6 )
+
+[node name="Freeze" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 11 )
+pitch_scale = 1.25
+
+[node name="Status" type="Control" parent="."]
+
+[node name="HP" type="TextureProgress" parent="Status"]
+margin_left = -14.5
+margin_top = -20.0
+margin_right = 43.5
+margin_bottom = -3.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_under = ExtResource( 7 )
+texture_progress = ExtResource( 5 )
+
+[node name="Counter" type="RichTextLabel" parent="Status"]
+modulate = Color( 0.247059, 0.929412, 1, 1 )
+margin_left = -2.0
+margin_top = -25.0
+margin_right = 13.0
+margin_bottom = -10.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[node name="Bolt_Spawn" type="Position2D" parent="."]
+position = Vector2( 12, -4 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Hitscan" to="." method="_on_attack_body_entered"]
+[connection signal="body_entered" from="Detect_Player" to="." method="_on_Detect_Player_body_entered"]
+[connection signal="body_entered" from="Detect_Player2" to="." method="_on_Detect_Player2_body_entered"]

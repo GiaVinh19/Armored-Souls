@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Target_02.wav-c4df0af8f14cec68622c29ca473b5b79.sample"
+
+[deps]
+
+source_file="res://Sound/Effect/Arrow/Target_02.wav"
+dest_files=[ "res://.import/Target_02.wav-c4df0af8f14cec68622c29ca473b5b79.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

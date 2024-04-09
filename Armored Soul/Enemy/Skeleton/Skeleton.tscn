@@ -1,0 +1,212 @@
+[gd_scene load_steps=64 format=2]
+
+[ext_resource path="res://Enemy/Skeleton/Skeleton.gd" type="Script" id=1]
+[ext_resource path="res://Material/Enemy/Skeleton/Freeze/freeze2.png" type="Texture" id=2]
+[ext_resource path="res://Material/Enemy/Skeleton/Hurt/2.png" type="Texture" id=3]
+[ext_resource path="res://Material/Enemy/Skeleton/Hurt/3.png" type="Texture" id=4]
+[ext_resource path="res://Material/Enemy/Skeleton/Hurt/4.png" type="Texture" id=5]
+[ext_resource path="res://Material/Enemy/Skeleton/Hurt/5.png" type="Texture" id=6]
+[ext_resource path="res://Material/Enemy/Skeleton/Hurt/6.png" type="Texture" id=7]
+[ext_resource path="res://Material/Enemy/Skeleton/Hurt/7.png" type="Texture" id=8]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/00.png" type="Texture" id=9]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/01.png" type="Texture" id=10]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/02.png" type="Texture" id=11]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/03.png" type="Texture" id=12]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/04.png" type="Texture" id=13]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/05.png" type="Texture" id=14]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/06.png" type="Texture" id=15]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/07.png" type="Texture" id=16]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/08.png" type="Texture" id=17]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/09.png" type="Texture" id=18]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/10.png" type="Texture" id=19]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/11.png" type="Texture" id=20]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/12.png" type="Texture" id=21]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/13.png" type="Texture" id=22]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/14.png" type="Texture" id=23]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/15.png" type="Texture" id=24]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/16.png" type="Texture" id=25]
+[ext_resource path="res://Material/Enemy/Skeleton/Attack/17.png" type="Texture" id=26]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/0.png" type="Texture" id=27]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/1.png" type="Texture" id=28]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/2.png" type="Texture" id=29]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/3.png" type="Texture" id=30]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/4.png" type="Texture" id=31]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/5.png" type="Texture" id=32]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/6.png" type="Texture" id=33]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/7.png" type="Texture" id=34]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/8.png" type="Texture" id=35]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/9.png" type="Texture" id=36]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/10.png" type="Texture" id=37]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/11.png" type="Texture" id=38]
+[ext_resource path="res://Material/Enemy/Skeleton/Walk/12.png" type="Texture" id=39]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/01.png" type="Texture" id=40]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/02.png" type="Texture" id=41]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/03.png" type="Texture" id=42]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/04.png" type="Texture" id=43]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/05.png" type="Texture" id=44]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/06.png" type="Texture" id=45]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/07.png" type="Texture" id=46]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/08.png" type="Texture" id=47]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/09.png" type="Texture" id=48]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/10.png" type="Texture" id=49]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/11.png" type="Texture" id=50]
+[ext_resource path="res://Material/Enemy/Skeleton/Dead/12.png" type="Texture" id=51]
+[ext_resource path="res://Sound/Skeleton/Axe_01.wav" type="AudioStream" id=52]
+[ext_resource path="res://Sound/Skeleton/Axe_Hit_01.wav" type="AudioStream" id=53]
+[ext_resource path="res://Sound/Skeleton/Axe_Hit_02.wav" type="AudioStream" id=54]
+[ext_resource path="res://Sound/Skeleton/Axe_Hit_03.wav" type="AudioStream" id=55]
+[ext_resource path="res://Sound/Effect/Freeze/Freeze.wav" type="AudioStream" id=56]
+[ext_resource path="res://Material/HUD/Stats/Health Bar/health_bar_decoration-1.png" type="Texture" id=57]
+[ext_resource path="res://Material/HUD/Stats/Health Bar/health_bar.png" type="Texture" id=58]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ) ],
+"loop": false,
+"name": "Attack",
+"speed": 13.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": false,
+"name": "Dead",
+"speed": 11.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "Freeze",
+"speed": 1.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ) ],
+"loop": false,
+"name": "Mini_Stun",
+"speed": 15.0
+}, {
+"frames": [ ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ) ],
+"loop": true,
+"name": "Walk",
+"speed": 13.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 4.5
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 10, 14.2857 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 4.5, 8 )
+
+[sub_resource type="CapsuleShape2D" id=5]
+
+[node name="Skeleton" type="KinematicBody2D"]
+scale = Vector2( 4, 4 )
+collision_layer = 2
+collision_mask = 13
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, 0.285714 )
+frames = SubResource( 1 )
+animation = "Walk"
+
+[node name="CollisionShape2D_Head" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( -2.5, -3.75 )
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D_Freeze" type="CollisionShape2D" parent="."]
+visible = false
+modulate = Color( 0.40625, 1, 0, 1 )
+position = Vector2( 0.5, 0.75 )
+scale = Vector2( 1.15, 1.1 )
+shape = SubResource( 3 )
+disabled = true
+
+[node name="CollisionShape2D_Body" type="CollisionShape2D" parent="."]
+visible = false
+modulate = Color( 0.266667, 1, 0, 1 )
+position = Vector2( -4.6, 8.75 )
+shape = SubResource( 4 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2( 2, 0 )
+enabled = true
+cast_to = Vector2( 0, 17.5 )
+collision_mask = 4
+
+[node name="Hitscan" type="Area2D" parent="."]
+visible = false
+collision_layer = 8
+collision_mask = 0
+
+[node name="Hitscan_Collision" type="CollisionPolygon2D" parent="Hitscan"]
+build_mode = 1
+polygon = PoolVector2Array( 27.0371, 17.1289, 27.1748, -4.6236, 24.96, -8.72237, 18.9681, -14.6945, 12.0635, -17.6508, 7.87651, -18.653, 1.26707, -18.7428, -2.80028, -17.7259, -9.97796, -12.5819, -9.93098, -10.7221, 6.99261, -10.7013, 14.9911, -4.79242, 18.943, 6.14886, 18.0139, 17.2595 )
+disabled = true
+
+[node name="Detect_Player" type="Area2D" parent="."]
+visible = false
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detect_Player"]
+position = Vector2( 8, 0 )
+shape = SubResource( 5 )
+
+[node name="Detect_Player2" type="Area2D" parent="."]
+visible = false
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Detect_Player2"]
+position = Vector2( 8, 0 )
+shape = SubResource( 5 )
+
+[node name="Sound" type="Node2D" parent="."]
+
+[node name="Swing" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 52 )
+volume_db = -10.0
+
+[node name="Hit_01" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 53 )
+pitch_scale = 1.15
+
+[node name="Hit_02" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 54 )
+pitch_scale = 1.15
+
+[node name="Hit_03" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 55 )
+pitch_scale = 1.15
+
+[node name="Freeze" type="AudioStreamPlayer2D" parent="Sound"]
+stream = ExtResource( 56 )
+pitch_scale = 1.25
+
+[node name="Status" type="Control" parent="."]
+
+[node name="HP" type="TextureProgress" parent="Status"]
+margin_left = -14.5
+margin_top = -20.0
+margin_right = 43.5
+margin_bottom = -3.0
+rect_scale = Vector2( 0.5, 0.5 )
+texture_under = ExtResource( 57 )
+texture_progress = ExtResource( 58 )
+
+[node name="Counter" type="RichTextLabel" parent="Status"]
+modulate = Color( 0.247059, 0.929412, 1, 1 )
+margin_left = -2.0
+margin_top = -25.0
+margin_right = 13.0
+margin_bottom = -10.0
+rect_scale = Vector2( 0.5, 0.5 )
+
+[connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
+[connection signal="body_entered" from="Hitscan" to="." method="_on_attack_body_entered"]
+[connection signal="body_entered" from="Detect_Player" to="." method="_on_Detect_Player_body_entered"]
+[connection signal="body_entered" from="Detect_Player2" to="." method="_on_Detect_Player2_body_entered"]

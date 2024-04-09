@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Kick_03.wav-fa3b3dcccf7ba75040ae57cdc82f1d00.sample"
+
+[deps]
+
+source_file="res://Sound/Player/Kick_Attack/Kick_03.wav"
+dest_files=[ "res://.import/Kick_03.wav-fa3b3dcccf7ba75040ae57cdc82f1d00.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

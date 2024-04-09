@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Sword_02.wav-df69ae86cd64b7c700f9c7f8f2d0c61b.sample"
+
+[deps]
+
+source_file="res://Sound/Player/Sword_Attack/Sword_02.wav"
+dest_files=[ "res://.import/Sword_02.wav-df69ae86cd64b7c700f9c7f8f2d0c61b.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

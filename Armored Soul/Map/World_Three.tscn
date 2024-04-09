@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Tiles/Magic_Cliff_Tile_Set.tres" type="TileSet" id=1]
+[ext_resource path="res://Player/Ray/Player.tscn" type="PackedScene" id=2]
+
+[node name="Node" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="."]
+scale = Vector2( 3, 3 )
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 31, 31 )
+format = 1
+tile_data = PoolIntArray( 65536, 0, 0, 65541, 3, 0 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+current = true
+zoom = Vector2( 0.75, 0.75 )
+limit_left = 0
+limit_top = 0
+limit_right = 3072
+limit_bottom = 768
+limit_smoothed = true
+drag_margin_h_enabled = false
+smoothing_enabled = true

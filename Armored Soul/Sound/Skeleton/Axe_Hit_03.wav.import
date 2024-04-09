@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Axe_Hit_03.wav-6b7075dc928c52b8dd8bb918269392a8.sample"
+
+[deps]
+
+source_file="res://Sound/Skeleton/Axe_Hit_03.wav"
+dest_files=[ "res://.import/Axe_Hit_03.wav-6b7075dc928c52b8dd8bb918269392a8.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

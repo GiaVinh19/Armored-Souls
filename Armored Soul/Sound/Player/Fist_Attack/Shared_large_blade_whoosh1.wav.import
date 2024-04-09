@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Shared_large_blade_whoosh1.wav-319b018fcab31125ff06c3d1245e02ab.sample"
+
+[deps]
+
+source_file="res://Sound/Fist_Attack/Shared_large_blade_whoosh1.wav"
+dest_files=[ "res://.import/Shared_large_blade_whoosh1.wav-319b018fcab31125ff06c3d1245e02ab.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

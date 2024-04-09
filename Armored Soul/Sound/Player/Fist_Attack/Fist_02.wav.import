@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Fist_02.wav-0f4c89d8623631a2f3029432fc2b9ad4.sample"
+
+[deps]
+
+source_file="res://Sound/Player/Fist_Attack/Fist_02.wav"
+dest_files=[ "res://.import/Fist_02.wav-0f4c89d8623631a2f3029432fc2b9ad4.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
